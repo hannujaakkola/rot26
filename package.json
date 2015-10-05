@@ -1,0 +1,24 @@
+{
+  "name": "rot26",
+  "description": "ROT26 encryption, twice as secure as ROT13",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [
+    "rot26",
+    "rot13",
+    "crypto",
+    "security",
+    "encryption",
+    "obfuscation",
+    "unicorn"
+  ],
+  "author": "Hannu Jaakkola",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": { 
+    "type": "git",
+    "url": "https://github.com/hannujaakkola/rot26.git"
+  }
+}
