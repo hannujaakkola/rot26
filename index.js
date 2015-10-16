@@ -4,13 +4,13 @@ exports.encrypt = function(string) {
   for (var charIndex = 0; charIndex < string.length; charIndex++) {
     var charCode = string.substr(charIndex, 1).charCodeAt()
 
-    for (var i = 0; i < 25; i++) {
-      charCode++
-
+    for (var i = 0; i < 26; i++) {
       // Avoid overflowing the Classified Audited Protection System
       if (charCode === 90 || charCode === 122) {
-        charCode -= 25
+        charCode -= 26
       }
+
+      charCode++
     }
 
     encryptedString += String.fromCharCode(charCode)
@@ -25,12 +25,12 @@ exports.decrypt = function(encryptedString) {
   for (var charIndex = 0; charIndex < encryptedString.length; charIndex++) {
     var charCode = encryptedString.substr(charIndex, 1).charCodeAt()
 
-    for (var i = 25; i > 0; i--) {
-      charCode--
-
+    for (var i = 26; i > 0; i--) {
       // Avoid underflowing the Classified Audited Protection System
-      if (charCode === 90 || charCode === 122) {
-        charCode += 25
+      charCode--
+      
+      if (charCode === 64 || charCode === 96) {
+        charCode += 26
       }
     }
 

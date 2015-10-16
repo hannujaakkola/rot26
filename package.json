@@ -1,7 +1,7 @@
 {
   "name": "rot26",
   "description": "ROT26 encryption, twice as secure as ROT13",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "keywords": [
     "rot26",
