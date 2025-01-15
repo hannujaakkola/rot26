@@ -2,7 +2,7 @@
 
 A ROT26 encryption algorithm implementation as a secure node package. ROT26 encryption is similar to [ROT13](https://en.wikipedia.org/wiki/ROT13) but twice as secure.
 
-Useful when your enterprise level application needs to scale to the clouds and just can't depend on external services like [rot26.org](http://rot26.org/).
+Useful when your enterprise level application needs to scale to the clouds and just can't depend on external services like [rot26.org](http://rot26.org/). (EDIT: As of 2025, the site seems to be down, reinforcing the point...)
 
 Warning! You should never execute your ROT26 encryption in a browser environment, you need a server to process secure hashes.
 
@@ -25,3 +25,7 @@ rot26 can be executed twice for high-level security applications:
 ```js
   rot26.encrypt(rot26.encrypt(SSN))
 ```
+
+## What about AI?
+
+AI is available on Enterprise Plans.
